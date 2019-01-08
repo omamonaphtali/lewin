@@ -1,0 +1,25 @@
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#what {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  background-color: cyan;
+}
+#why {
+  background-image: linear-gradient(180deg, white 50%, cyan 50%);
+}
+#what div, #why div{
+  background-color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+  section {
+    min-height: 300px;
+  }
+}
