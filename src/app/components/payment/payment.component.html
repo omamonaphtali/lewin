@@ -1,0 +1,36 @@
+<div class="row payRow">
+  <div class="tabs">
+    <button
+      *ngFor="let option of paymentOptions"
+        (click)="openPayOpt($event,'option.name')">
+      <img [src]="option.placeholderUrl" alt="option.name" class="img-fluid">
+    </button>
+  </div> <!-- //tabs -->
+  <div id="mpesa" class="tabContent">
+    <div class="text-center">
+      <div class="mpesa"></div>
+      <div>
+        <h4 style="margin-top:10px;">PAYBILL: XXXXXX</h4>
+        <h4>ACCOUNT: LEWIN SCH</h4>
+      </div>
+    </div>
+  </div> <!-- //mpesa tab-content-->
+  <div id="stripe" class="tabContent">
+    <div class="text-center">
+      <div class="stripe">
+        <img src="https://res.cloudinary.com/jaredomamo/image/upload/v1546939504/lewin/visa-mc.png" alt="stripe">
+      </div>
+      <button type="button" class="btn btn-primary sharePayButt" style="background-color: #337ab7;" data-toggle="modal" data-target="#myModal">
+          Donate Now
+      </button>
+    </div>
+  </div>
+  <div id="paypal" class="tabContent">
+    <div class="text-center">
+      <div class="paypal">
+        <img src="https://res.cloudinary.com/jaredomamo/image/upload/v1546939588/lewin/paypal-logo.png" alt="Paypal">
+      </div>
+      <input type="button" id="ppal_btn" value="Donate Now" class="btn btn-primary sharePayButt" style="background-color: #337ab7;">
+    </div>
+  </div>
+</div>

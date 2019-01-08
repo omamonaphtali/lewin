@@ -12,7 +12,7 @@ import { ProductsService } from '../services/products.service';
 export class CartComponent implements OnInit {
 
   public items: ItemsModel[];
-  public total: number = 0;
+	public total: number = 0;
 
   constructor(
     private prodService: ProductsService,

@@ -1,0 +1,79 @@
+.payRow {
+  border: 7px solid #eee;
+  padding: 0;
+  border-bottom: none;
+  border-left: none;
+}
+.tabs {
+  float: left;
+  border-left: 7px solid #eee;
+  background-color: #eee;
+  width: 40%;
+  height: 455px;
+  border-bottom: 2px solid #eee;
+}
+.tabs button {
+  display: block;
+  background-color: #eee;
+  color: black;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  border-bottom: 5px solid #fff;
+  border-right: 0;
+  position: relative;
+  height: 90px;
+}
+.tabs button:hover {
+  background-color: #eee;
+}
+.tabs button.active, .tabs button:first {
+  background-color: #FFF;
+  border-right: none;
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
+}
+.tabs button img {
+  max-height: 65px !important;
+}
+.tabs button.active::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-top: 0;
+  border-left: 0;
+  border-left: 7px solid #fff;
+  height: 100%;
+  margin-top: 0;
+}
+
+/* TAB CONTENT */
+.tabContent {
+  float: rigt;
+  padding: 0px 12px;
+  border-left: 7px solid #eee;
+  border-bottom: 7px solid #eee;
+  width: 60%;
+  min-height: 455px;
+  display: none;
+}
+
+/* ##### M-PESA ########## */
+#mpesa {
+  display: block;
+}
+.mpesa {
+  background: url('https://res.cloudinary.com/jaredomamo/image/upload/v1546939398/lewin/mpesa-logo.png') no-repeat;
+  margin: auto;
+  padding-bottom: 5px;
+  background-position: 0px -256px;
+  width: 200px;
+  height: 70px;
+}
+

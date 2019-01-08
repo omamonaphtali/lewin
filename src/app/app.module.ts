@@ -8,11 +8,12 @@ import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
 import { ProductsService } from './services/products.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'donate', component: CartComponent},
-  {path: 'products', component: ProductComponent},
+  {path: 'check-out', component: CartComponent},
+  {path: 'donate', component: ProductComponent},
   {path: '**', redirectTo: ''}
 ]
 
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     HomeComponent,
     CartComponent,
     ProductComponent,
-    NavbarComponent
+    NavbarComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
