@@ -65,9 +65,6 @@
 }
 
 /* ##### M-PESA ########## */
-#mpesa {
-  display: block;
-}
 .mpesa {
   background: url('https://res.cloudinary.com/jaredomamo/image/upload/v1546939398/lewin/mpesa-logo.png') no-repeat;
   margin: auto;
@@ -76,4 +73,10 @@
   width: 200px;
   height: 70px;
 }
+
+/* ####### TOGGLE ######## */
+/* input[type="checkbox"]#mpesa:checked ~ div#mpesa, 
+input[type="checkbox"]#stripe:checked ~ div#stripe {
+  display: block;
+} */
 

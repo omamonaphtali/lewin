@@ -2,11 +2,12 @@
   <div class="tabs">
     <button
       *ngFor="let option of paymentOptions"
-        (click)="openPayOpt($event,'option.name')">
+        class="{{ option.name}}">
       <img [src]="option.placeholderUrl" alt="option.name" class="img-fluid">
     </button>
   </div> <!-- //tabs -->
-  <div id="mpesa" class="tabContent">
+  <div id="mpesa" class="tabContent"
+    [ngStyle]="{display: mpesaOpen == true ? 'block' : 'hidden'}">
     <div class="text-center">
       <div class="mpesa"></div>
       <div>

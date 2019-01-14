@@ -9,6 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductsService } from './services/products.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     CartComponent,
     ProductComponent,
     NavbarComponent,
-    PaymentComponent
+    PaymentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
