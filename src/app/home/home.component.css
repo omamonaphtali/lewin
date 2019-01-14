@@ -1,9 +1,10 @@
 
 section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 #what {
   flex-direction: row;
@@ -13,27 +14,39 @@ section {
 }
 #why {
   background-image: linear-gradient(180deg, white 40%, rgb(0, 153, 204) 40%);
+  padding: 0 20px;
 }
 #what div, #why div{
   background-color: white;
+}
+#section-2 {
+  background-color: burlywood;
+}
+#section-2 .row div {
+  margin-top: 20px;
+  padding: 0 25px;
+}
+#what div:last-child,
+#section-2,
+#why div {
+  -webkit-box-shadow: 0px 0px 20px -2px rgba(46,74,117,1);
+  -moz-box-shadow: 0px 0px 20px -2px rgba(46,74,117,1);
+  box-shadow: 0px 0px 20px -2px rgba(46,74,117,1);
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
 @media screen and (min-width: 768px) {
   section {
+    flex-direction: column;
     min-height: 350px;
     margin: 0;
   }
-  #section-2 {
-    background-color: burlywood;
-  }
-  #what div:last-child,
-  #section-2 .row div,
-  #why div {
+  #section-2 .row div {
     -webkit-box-shadow: 0px 0px 20px -2px rgba(46,74,117,1);
     -moz-box-shadow: 0px 0px 20px -2px rgba(46,74,117,1);
     box-shadow: 0px 0px 20px -2px rgba(46,74,117,1);
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
