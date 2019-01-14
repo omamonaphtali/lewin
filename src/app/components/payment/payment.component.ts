@@ -15,10 +15,10 @@ export class PaymentComponent implements OnInit {
 			placeholderUrl: 'https://res.cloudinary.com/jaredomamo/image/upload/v1546939588/lewin/paypal-logo.png'}
 	];
 
+  public mpesaOpen = true;
   constructor() { }
 
   ngOnInit() {
-    const mpesaOpen = true;
   }
 
 }

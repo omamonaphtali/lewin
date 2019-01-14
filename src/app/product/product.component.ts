@@ -19,7 +19,7 @@ export class ProductComponent implements OnInit {
   ngOnInit() {
     this.products = this.prodService.getproducts();
   }
-  private getTotal():void {
+  public getTotal():void {
     this.total = 0;
     for (var i=0; i < 3; i++) {
       this.total += this.products[i].price * this.products[i].quantity;
