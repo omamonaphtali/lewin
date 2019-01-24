@@ -1,40 +1,47 @@
 <div class="row" style="margin: 20px;">
 
-  <!-- <div class="col-sm-8">
+  <!-- <div class="col-sm-6">
     <app-payment></app-payment>
   </div> -->
-  <div class="col-sm-4">
+  <div class="col-sm-6">
     <h2 style="font-family: serif;">Donation Calculator</h2>
     <p>Enter the quantity you want to donate <br/> or the donation amount directly</p>
-    <table border="1">
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Photo</th>
-        <th>Quantity</th>
-        <th>Sub-Total</th>
-      </tr>
-      <tr *ngFor="let product of products">
-        <td>{{product.id}}</td>
-        <td>{{product.name}}</td>
-        <td>{{product.price}}</td>
-        <td>
-            <img src="{{product.photo}}" width="50">
-        </td>
-        <td>
-          <input [(ngModel)]="product.quantity">
-        </td>
-        <td>{{ product.quantity * product.price }}</td>
-      </tr>
-      <tr>
-        <td colspan="5">
-          <button class="btn btn-outline-primary"
-            (click)="getTotal()">Get Total</button>
-        </td>
-        <td style="font-weight: 600; font-size: large;">{{ total }}</td>
-      </tr>
-    </table>
+    <div class="table-responsive">
+        <table class="table table-sm table-striped">
+          <caption>A donation amount calculator</caption>
+          <thead class="thead-dark">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Price</th>
+              <!-- <th>Photo</th> -->
+              <th>Quantity</th>
+              <th>Sub-Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <th scope="row">{{product.id}}</th>
+              <td>{{product.name}}</td>
+              <td>{{product.price}}</td>
+              <!-- <td>
+                  <img src="{{product.photo}}" width="50">
+              </td> -->
+              <td>
+                <input [(ngModel)]="product.quantity">
+              </td>
+              <td>{{ product.quantity * product.price }}</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <button class="btn btn-outline-primary"
+                  (click)="getTotal()">Get Total</button>
+              </td>
+              <td style="font-weight: 600; font-size: large;">{{ total }}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
     
   </div>
 </div>
