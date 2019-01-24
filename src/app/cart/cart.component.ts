@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ItemsModel } from '../models/items.model';
-import { ProductsService } from '../services/products.service';
+import { ProductsService } from '../services/calculator.service';
 
 @Component({
   selector: 'app-cart',

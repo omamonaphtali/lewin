@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductModel } from '../models/products.model';
-import { ProductsService } from '../services/products.service';
+import { ProductsService } from '../services/calculator.service';
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  selector: 'app-calculator',
+  templateUrl: './calculator.component.html',
+  styleUrls: ['./calculator.component.css']
 })
-export class ProductComponent implements OnInit {
+export class CalculatorComponent implements OnInit {
 
   public products: ProductModel[];
   public total: number;

@@ -4,6 +4,7 @@
   align-items: flex-start;
   justify-content: center;
   margin: 20px;
+  /* border-top: 2px solid blue; */
 }
 .links {
   display: flex;

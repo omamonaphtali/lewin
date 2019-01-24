@@ -1,0 +1,22 @@
+section{
+  padding-bottom: 15px;
+  border-bottom: 2px solid blue;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  font-weight: 600;
+  font-family: serif;
+}
+
+@media screen and (min-width: 769px) {
+  section {
+    width: 90%; 
+    margin: 0 5%;    
+    margin-top: 20px;
+    margin-bottom: 20px;}
+}

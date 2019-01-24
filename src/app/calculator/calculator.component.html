@@ -1,11 +1,11 @@
-<app-navbar></app-navbar>
-<div class="row">
+<div class="row" style="margin: 20px;">
 
-  <div class="col-sm-8">
+  <!-- <div class="col-sm-8">
     <app-payment></app-payment>
-  </div>
+  </div> -->
   <div class="col-sm-4">
-    <h3>Product List</h3>
+    <h2 style="font-family: serif;">Donation Calculator</h2>
+    <p>Enter the quantity you want to donate <br/> or the donation amount directly</p>
     <table border="1">
       <tr>
         <th>Id</th>
@@ -29,11 +29,13 @@
       </tr>
       <tr>
         <td colspan="5">
-          <button (click)="getTotal()">Get Total</button>
+          <button class="btn btn-outline-primary"
+            (click)="getTotal()">Get Total</button>
         </td>
-        <td>{{ total }}</td>
+        <td style="font-weight: 600; font-size: large;">{{ total }}</td>
       </tr>
     </table>
+    
   </div>
 </div>
 
