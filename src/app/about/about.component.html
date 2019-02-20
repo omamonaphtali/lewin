@@ -15,9 +15,9 @@
     <p>The school opened its doors in 2017. Current enrollment stands at 157. It has employed 7 community teachers and 4 staff members.</p>
     <p>The distribution of the students is as follows:</p>
     <div>
-      <div *ngFor="let grade of status">
-        <h5>{{ grade.grade }}</h5>
-        <h6>{{ grade.number }} students</h6>
+      <div *ngFor="let level of grades">
+        <h5>{{ level.grade }}</h5>
+        <h6>{{ level.amount }} students</h6>
       </div>
     </div>
     <h4>Academic Programs</h4>
@@ -68,4 +68,3 @@
     </table>
   </div>
 </section>
-<app-footer></app-footer>
