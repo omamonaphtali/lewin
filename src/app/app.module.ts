@@ -28,21 +28,14 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     NavbarComponent,
-<<<<<<< HEAD
-    PaymentComponent
-=======
     PaymentComponent,
     FooterComponent,
     AboutComponent
->>>>>>> dev
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
-  ],
-  providers: [
-    ProductsService
   ],
   bootstrap: [AppComponent]
 })
