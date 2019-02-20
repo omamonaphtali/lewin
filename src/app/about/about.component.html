@@ -1,48 +1,71 @@
+<app-navbar></app-navbar>
 <section>
-  <div class="row banner">
-    <div class="col-sm-6">
-      <img
-        src="https://res.cloudinary.com/jaredomamo/image/upload/v1547187499/lewin/lewin-logo-small.png" alt="logo of Lewin School"
-        class="img-fluid"
-        style="margin: auto; display: flex;">
-    </div>
-    <div class="col-sm-6" style="margin-top: 20px;">
-      <h2>Our Vision</h2>
-      <p>We envision developing a self-conscious and all rounded generation of youth who look beyond the existing constraints to see a wealth of opportunities that create a shared value in the community.</p>
-    </div>
-  </div>
-  <div>
-    <h2>Our Story</h2>
-    <p>Lewin School is a primary school situated in Mogotio, Baringo Kenya. The school’s founding was inspired by the growing school dropouts rates in Baringo’s villages. School is barely seen as enabler of prosperity. Most students dropout of school before 6th grade.</p>
-    <p style="font-weight: bold;">(Painting a picture of the reality on the ground- ( pastoralism, financial incapability, and the educational model that doesn’t appreciates cultural funds of knowledge)</p>
+  <div class="story">
+    <h3>Our Story</h3>
+    <p>Lewin School is a primary school situated in Mogotio, Baringo Kenya. The school’s founding was inspired by the growing school dropouts rates in Baringo’s villages. School is barely seen as enabler of prosperity. Most students dropout of school before 6th grade.
+    </p>
+    <p>Lewin School is modeling a more transformational and community-inclusive educational system. Though some of the classes we offer are like the ones offered in Kenyan public and private schools, the adjustments in delivery, revamped sports and club activities and critical community engagement programs are unique.</p>
     <p>Lewin School is modeling a more transformational and community-inclusive educational system. Though some of the classes we offer are like the ones offered in Kenyan public and private schools, the adjustments in delivery, revamped sports and club activities and critical community engagement programs are unique.</p>
     <p>Rigid concentration on academics by public and private schools leaves certain aspects of school life unexplored by students; this type of schooling creates an illusion that qualifies high grades as a credible measure of intelligence and the only avenue to prosperity- while it really isn’t.</p>
     <p>Teaching styles inconsistent with cultural learning styles stifles thought processes, development of cognitive skills, independent learning and creative application of materials covered in the classrooms- and ultimately contributes to the increasing school dropout rates.</p>
-    <p>Through empowering students, teachers, and the community at large, we envision, improved access to quality education, reduced levels of poverty and change of views on retrogressive communal practices such as Early marriages.</p>
+    <p>Through empowering students, teachers, and the community at large, we envision, improved access to quality education, reduced levels of poverty and change of views on retrogressive communal practices such as Early marriages. </p>        
+  </div>
+  <div class="status">
+    <h3>Our Status</h3>
+    <p>The school opened its doors in 2017. Current enrollment stands at 157. It has employed 7 community teachers and 4 staff members.</p>
+    <p>The distribution of the students is as follows:</p>
+    <div>
+      <div *ngFor="let grade of status">
+        <h5>{{ grade.grade }}</h5>
+        <h6>{{ grade.number }} students</h6>
+      </div>
+    </div>
+    <h4>Academic Programs</h4>
+    <p>We offer the following courses: (as per the regulations of the Ministry of Education) </p>
+    <ol>
+      <li>Mathematics</li>
+      <li>English</li>
+      <li>Science</li>
+      <li>Social Studies</li>
+    </ol>
   </div>
   <div>
-    <h2>The Status</h2>
-    <p>he school opened its doors in 2017 ​ . C​ urrent enrollment stands at 157. It has employed 7 community teachers and 4 staff members.</p>
-    <table class="table">
-      <tr>
-        <th scope="row">Grade</th>
-        <td>Kindergarten</td>
-        <td>Grade 1</td>
-        <td>Grade 2</td>
-        <td>Grade 3</td>
-        <td>Grade 4</td>
-        <td>Grade 5</td>
-      </tr>
-      <tr>
-        <th scope="row"># students</th>
-        <td>93</td>
-        <td>17</td>
-        <td>18</td>
-        <td>14</td>
-        <td>10</td>
-        <td>5</td>
-      </tr>
+    <h3>The How</h3>
+    <p style="font-style: italic;">A typical day at Lewin School looks as below:</p>
+    <table class="table table-striped table-bordered">
+      <thead class="table-primary">
+        <tr>
+          <th>Time/day</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8 A.M- 9A.M</td>
+          <td>Students engage in indoor activities: debating, music, drawing & painting, poetry, music, role plays, negotiation skills.</td>
+        </tr>
+        <tr>
+          <td>9 A.M- 12 P.M.</td>
+          <td>Normal teaching- as per guidelines of Ministry of Education, Kenya.</td>
+        </tr>
+        <tr>
+          <td>2P.M- 3P.M</td>
+          <td>Community engagements: site selected by teachers in advance.</td>
+        </tr>
+        <tr>
+          <td>3P.M- 4P.M</td>
+          <td>Sports & active club engagements. Sports: track, soccer, volleyball. Clubs: debate, public speaking.</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Teacher-community engagements. Talks focus on emerging issues affecting the community.</td>
+        </tr>
+        <tr>
+          <td>Friday: afternoons</td>
+          <td>Teacher- teacher engagement:ideas sharing for improved service delivery.</td>
+        </tr>
+      </tbody>
     </table>
   </div>
-
 </section>
+<app-footer></app-footer>

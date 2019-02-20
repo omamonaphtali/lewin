@@ -1,22 +1,32 @@
-section{
-  padding-bottom: 15px;
-  border-bottom: 2px solid blue;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
-.banner {
+.status div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-h2{
-  font-weight: 600;
-  font-family: serif;
+.status div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(0, 153, 204);
+  border-radius: 50%;
+  margin: 5px 15px;
+}
+.table-primary {
+  background-color: rgb(0, 153, 204) !important;
+  color: white;
 }
 
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 768px) {
   section {
-    width: 90%; 
-    margin: 0 5%;    
-    margin-top: 20px;
-    margin-bottom: 20px;}
+    width: 80%;
+    margin: 20px 10%;
+  }
 }
