@@ -11,11 +11,12 @@ import { ProductsService } from './services/products.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  // {path: 'check-out', component: CartComponent},
-  {path: 'donate', component: ProductComponent},
+  {path: 'about', component: AboutComponent},
+  // {path: 'donate', component: ProductComponent},
   {path: '**', redirectTo: ''}
 ]
 
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     ProductComponent,
     NavbarComponent,
     PaymentComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
