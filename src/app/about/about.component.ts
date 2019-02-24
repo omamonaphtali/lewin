@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { grades } from './grades'
+import { Grade, grades } from './grades';
+import { GradeService } from './grade.service';
 
 @Component({
   selector: 'app-about',
@@ -8,11 +9,16 @@ import { grades } from './grades'
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  grades = grades;
+  grades: Grade[];
 
-  constructor() { }
+  getGrades(): void {
+    this.gradeService.getGrades().subscribe(grades => this.grades = grades);
+  }
+
+  constructor(private gradeService: GradeService) { }
 
   ngOnInit() {
+    this.getGrades();
   }
 
 }
